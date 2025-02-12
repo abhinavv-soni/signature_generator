@@ -190,20 +190,16 @@ function App() {
               transition={{ delay: 0.4 }}
             >
               {formData.email && (
-                <div className="flex items-center mb-1.5">
-                  <div className="w-5 h-5 flex items-center justify-center">
-                    <Mail className={`w-4 h-4 ${template.textColor}`} />
+                  <div className="flex items-center mb-1.5">
+                      <Mail className={`w-4 h-4 ${template.textColor} my-auto`} />
+                      <span className={`ml-2 text-sm ${template.textColor} opacity-80 my-auto`}>{formData.email}</span>
                   </div>
-                  <span className={`ml-2 text-sm ${template.textColor} opacity-80`}>{formData.email}</span>
-                </div>
               )}
               {formData.phone && (
-                <div className="flex items-center mb-1.5">
-                  <div className="w-5 h-5 flex items-center justify-center">
-                    <Phone className={`w-4 h-4 ${template.textColor}`} />
+                  <div className="flex items-center mb-1.5">
+                      <Phone className={`w-4 h-4 ${template.textColor} my-auto`} />
+                      <span className={`ml-2 text-sm ${template.textColor} opacity-80 my-auto`}>{formData.phone}</span>
                   </div>
-                  <span className={`ml-2 text-sm ${template.textColor} opacity-80`}>{formData.phone}</span>
-                </div>
               )}
               {formData.website && (
                 <div className="flex items-center mb-1.5">
