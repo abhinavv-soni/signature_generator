@@ -1,6 +1,6 @@
 import React, { useState, useRef } from 'react';
-import { motion, AnimatePresence } from 'framer-motion';
-import { Mail, Phone, Globe, Linkedin, Twitter, Upload, Camera, ChevronRight, Copy, Download } from 'lucide-react';
+import { motion } from 'framer-motion';
+import { Mail, Phone, Globe, Linkedin, Twitter, Upload, Camera, Copy, Download } from 'lucide-react';
 import html2canvas from 'html2canvas';
 import './App.css';
 
@@ -53,7 +53,6 @@ function App() {
   });
 
   const [selectedTemplate, setSelectedTemplate] = useState('minimal');
-  const [previewMode, setPreviewMode] = useState('html');
 
   const handleInputChange = (e) => {
     const { name, value } = e.target;
